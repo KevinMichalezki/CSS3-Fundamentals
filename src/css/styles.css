@@ -1,0 +1,12 @@
+/* Color all input text fields*/
+input[type="text"], textarea
+{
+    background-color: yellow;
+    color: blue;
+}
+/* Color Submit and Reset buttons green with white text*/
+input:not([type="text"])
+{
+    background-color: green;
+    color: white;
+}
