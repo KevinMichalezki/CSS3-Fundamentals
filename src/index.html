@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXSM 3934 Exercise</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>EXSM 3934 Exercise</h1>
+      <form id="example">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXSM 3934 Exercise</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <h1>EXSM 3934 Exercise</h1>
-  <form action="index.html" method="get">
-    <div>
-      <label for="name">Name</label>
-      <input id="name" type="text">
-    </div>
-    <div>
-      <label for="email">E-Mail Address</label>
-      <input id="email" type="text">
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message"></textarea>
-    </div>
-    <div>
-      <input id="submit" type="submit">
-      <input type="reset">
-    </div>
-  </form>
-  <script src="js/scripts.js" defer></script>
-</body>
+        <label for="email">E-Mail</label>
+        <input type="text" name="email" id="email">
 
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message">
+
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <input type="reset" name="clear" id="clear" value="Clear">
+      </form>
+    </div>
+	<script src="js/scripts.js" defer></script>
+  </body>
 </html>
