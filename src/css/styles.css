@@ -1,12 +1,87 @@
 /* Color all input text fields*/
-input[type="text"], textarea
+input[type="text"]
 {
-    background-color: yellow;
     color: blue;
 }
 /* Color Submit and Reset buttons green with white text*/
 input:not([type="text"])
 {
-    background-color: green;
+    background-color:darkgreen;
     color: white;
 }
+/* #2 Put content is container*/
+.container
+{
+    width: 800px;
+    margin: 0 auto;
+}
+/* #3 add a background image, ../img must be entered to go up a level to img folder*/
+body {
+    background-image: url("../img/background\ 2.jpg");
+}
+.container
+{
+    background-color: white;
+}
+/* #4 Style all "text" input fields with a highlighted border when user selects use focus pseudo connector*/
+input[type="text"]:focus
+{
+    border: 3px solid gray;
+}
+/* #5 Style buttons to change color when a user hovers over it, target all input fields not that don't have attribute text */
+input:not([type="text"]):hover
+{
+    background-color: blueviolet;
+}
+/* #6 have form be mobile phone friendly, mobile specs as follows*/
+@media (max-width: 400px)
+{
+    .container
+    {
+        width: 75%;
+    }
+    label, input
+    {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+    label
+    {
+        text-align: center;
+    }
+}
+/* #7 have form be tablet friendly, tablet specs as follows*/
+@media (min-width: 400px) and (max-width: 768px)
+{
+    .container
+    {
+        width: 75%;
+    }
+    label, input
+    {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+    label
+    {
+        text-align: center;
+    }
+}
+/* #8 have form be personal computer friendly, pc specs as follows*/
+@media (min-width: 768px)
+{
+    label, input
+    {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    label
+    {
+        text-align: center;
+    }
+}
+/* Image Styling and basic responsive build exercise complete*/
+
